@@ -1,0 +1,18 @@
+@use 'utility' as util;
+
+* { 
+  box-sizing: border-box;
+  &:before,&:after{
+     box-sizing: inherit;
+  }
+}
+
+html,body{
+	height: 100%;
+}
+
+html{
+	scroll-behavior: smooth;
+	background-color: #fff;
+	color: #222;
+}
