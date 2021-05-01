@@ -22,7 +22,6 @@ body {
   font-family: Newsreader;
   font-size: 1em;
   line-height: 2em;
-  max-width: 560px;
   margin: auto;
 }
 
@@ -109,6 +108,11 @@ html {
   scroll-behavior: smooth;
   background-color: #fff;
   color: #222;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=screen.css.map */
