@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  font-family: "IBM PLex Sans";
+  font-family: "IBM Plex Sans";
   margin: auto;
   max-width: 90%;
 }
@@ -61,7 +61,7 @@ a {
 }
 
 header {
-  font-family: "IBM PLex Sans";
+  font-family: "IBM Plex Sans";
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -202,7 +202,7 @@ main.blocks figcaption {
   font-size: 0.7em;
   color: rgba(0, 19, 77, 0.75);
   text-align: center;
-  font-family: "IBM PLex Sans";
+  font-family: "IBM Plex Sans";
 }
 
 footer {

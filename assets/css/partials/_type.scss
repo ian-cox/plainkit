@@ -1,7 +1,42 @@
-// Type
-$sans: "IBM PLex Sans";
+//// Type Pairings
+
+// // Alegreya
+// @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// $sans: "Alegreya Sans";
+// $serif: "Alegreya";
+// $mono: "Fira Mono";
+
+// // PT Sans / Serif + Recursive
+// @import url('https://fonts.googleapis.com/css2?family=Recursive&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// $sans: "PT Sans";
+// $serif: "PT Serif";
+// $mono: "Recursive";
+
+// // Spectral 
+// @import url('https://fonts.googleapis.com/css2?family=Recursive&family=Inter:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// $sans: "Inter";
+// $serif: "Spectral";
+// $mono: "Recursive";
+
+// // Alegreya
+// @import url('https://fonts.googleapis.com/css2?family=Recursive&family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// $sans: "Alegreya Sans";
+// $serif: "Alegreya";
+// $mono: "Recursive";
+
+// // Source
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro&display=swap');
+// $sans: "Source Sans Pro";
+// $serif: "Source Serif Pro";
+// $mono: "Source Code Pro";
+
+// IBM Plex
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono&display=swap');
+$sans: "IBM Plex Sans";
 $serif: "IBM Plex Serif";
 $mono: "IBM Plex Mono";
 
+// Usage
 $text: $sans;
 $headline: $serif;
+$code: $mono;

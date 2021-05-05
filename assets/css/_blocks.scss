@@ -68,7 +68,7 @@ main.blocks{
 
   code{
     background-color: rgba(color.$text,.1);
-    font-family: type.$mono;
+    font-family: type.$code;
     padding: .02em .25em;
     border-radius: .25em;
     -webkit-box-decoration-break: clone;
@@ -132,7 +132,7 @@ main.blocks{
     font-size: .7em;
     color: rgba(color.$text,.75);
     text-align: center;
-    font-family: type.$sans;
+    font-family: type.$text;
   }
 
 }
