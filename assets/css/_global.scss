@@ -1,23 +1,53 @@
-@use 'utility' as util;
+@use 'partials/breakpoint' as *;
+@use 'partials/color';
+@use 'partials/type';
 
-* { 
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   &:before,&:after{
      box-sizing: inherit;
   }
 }
 
-html,body{
-	height: 100%;
+
+::selection {
+  background: color.$selection; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: color.$selection; /* Gecko Browsers */
 }
 
-html{
-	scroll-behavior: smooth;
-	background-color: #fff;
-	color: #222;
+html {
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */ 
+	-moz-osx-font-smoothing: grayscale; /* Firefox */ 
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 400;
+	background-color: color.$background;
+	color: rgba(color.$text,.9);
+	@include breakpoint(tablet-up){
+		font-size: 17px;
+	}
+  @include breakpoint(tablet-up){
+    font-size: 18px;
+  }
+  @include breakpoint(tablet-landscape-up){
+    font-size: 19px;
+  }
+  @include breakpoint(desktop-up){
+    font-size: 22px;
+  }
 }
 
-main{
-  max-width: 800px;
-  margin: 0 auto;
+
+body {
+  font-family: type.$text;
+  margin: auto;
+  max-width: 90%;
+}
+
+a{
+  color: color.$text;
 }

@@ -1,1 +1,7 @@
-@use 'utility' as util;
+@use 'partials/breakpoint' as *;
+@use 'partials/color';
+@use 'partials/type';
+
+footer{
+  padding: 2em 0;
+}

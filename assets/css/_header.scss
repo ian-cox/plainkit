@@ -1,1 +1,27 @@
-@use 'utility' as util;
+@use 'partials/breakpoint' as *;
+@use 'partials/color';
+@use 'partials/type';
+
+header{
+  font-family: type.$sans;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2em 0;
+  ul{
+    display: flex;
+    list-style: none;
+    li{
+      margin-left: 2em;
+      font-size: .8em;
+      text-transform: uppercase;
+      letter-spacing: .125em;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+  .logo{
+    font-size: 1.5em;
+  }
+}

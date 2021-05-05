@@ -1,0 +1,138 @@
+@use 'partials/breakpoint' as *;
+@use 'partials/color';
+@use 'partials/type';
+
+main.blocks{
+
+  margin: 8vw auto;
+  max-width: 32em;
+  @include breakpoint(tablet-up){
+    margin: 10vw auto;
+  }
+  @include breakpoint(desktop-up){
+    margin: 8em auto;
+  }
+
+  a{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: rgba(color.$link, 0.4);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.1em;
+    text-decoration-skip: none;
+    transition: all .25s;
+    &:hover{
+      background-color: rgba(color.$link, 0.2);
+    }
+  }
+
+
+  h1,h2,h3{
+    color: color.$text;
+    font-family: type.$headline;
+    margin-bottom: 0.4rem;
+    margin-top: 1.4rem;
+    line-height: 1;
+  }
+
+  .loud{
+    font-size: 3em;
+  }
+
+  h1{
+    font-size: 1.5em;
+    font-weight: 700;	
+  }
+
+  h2{
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  h3{
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  ul,ol{
+    padding-left: 2em;
+    li{
+      margin-bottom: .15em;
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  code{
+    background-color: rgba(color.$text,.1);
+    font-family: type.$mono;
+    padding: .02em .25em;
+    border-radius: .25em;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  pre{
+    background-color: rgba(color.$text,.05);
+    border: 1px solid rgba(color.$text,.1);
+    border-radius: .25em;
+    padding: .5em;
+    code{
+      background-color: transparent;
+    }
+  }
+
+  p,ul,ol,pre,hr{
+    margin-bottom: 1.25em;
+  }
+
+  hr{
+    margin-top: 1em;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(color.$text, 0.25);
+    border-bottom: 1px solid rgba(color.$background, 0.25);
+  }
+
+  figure{
+    padding: 0;
+    margin: 2em 0;
+    img{
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  figure.medium{
+    @include breakpoint(tablet-landscape-up){
+      position: relative;
+      width: 75vw;
+      max-width: 960px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  figure.large{
+    @include breakpoint(tablet-up){
+      position: relative;
+      width: 90vw;
+      max-width: 1920px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  figcaption{
+    line-height: 1;
+    font-size: .7em;
+    color: rgba(color.$text,.75);
+    text-align: center;
+    font-family: type.$sans;
+  }
+
+}
