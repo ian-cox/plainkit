@@ -30,13 +30,45 @@
 // $serif: "Source Serif Pro";
 // $mono: "Source Code Pro";
 
-// IBM Plex
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono&display=swap');
-$sans: "IBM Plex Sans";
-$serif: "IBM Plex Serif";
-$mono: "IBM Plex Mono";
 
+// // Merriweather
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Mono&display=swap');
+// $sans: "Merriweather Sans";
+// $serif: "Merriweather";
+// $mono: "Fira Mono";
+
+
+// // Crimson pro
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Recursive&display=swap');
+// $sans: "Open Sans";
+// $serif: "Crimson pro";
+// $mono: "Recursive";
+// // Usage
+// $text: $serif;
+// $headline: $serif;
+// $ui: $sans;
+// $code: $mono;
+
+
+// Crimson pro
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Recursive&display=swap');
+$sans: "Open Sans";
+$serif: "Crimson pro";
+$mono: "Recursive";
 // Usage
-$text: $sans;
+$text: $serif;
 $headline: $serif;
+$ui: $sans;
 $code: $mono;
+
+
+// // IBM Plex
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono&display=swap');
+// $sans: "IBM Plex Sans";
+// $serif: "IBM Plex Serif";
+// $mono: "IBM Plex Mono";
+// // Usage
+// $text: $sans;
+// $headline: $serif;
+// $ui: $sans;
+// $code: $mono;

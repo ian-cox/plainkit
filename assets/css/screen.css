@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Recursive&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,27 +31,27 @@ html {
 }
 @media (min-width: 600px) {
   html {
-    font-size: 17px;
+    font-size: 1.1em;
   }
 }
 @media (min-width: 600px) {
   html {
-    font-size: 18px;
+    font-size: 1.2em;
   }
 }
 @media (min-width: 900px) {
   html {
-    font-size: 19px;
+    font-size: 1.3em;
   }
 }
 @media (min-width: 1200px) {
   html {
-    font-size: 22px;
+    font-size: 1.4em;
   }
 }
 
 body {
-  font-family: "IBM Plex Sans";
+  font-family: "Crimson pro";
   margin: auto;
   max-width: 90%;
 }
@@ -61,7 +61,7 @@ a {
 }
 
 header {
-  font-family: "IBM Plex Sans";
+  font-family: "Open Sans";
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -86,7 +86,7 @@ header .logo {
 
 main.blocks {
   margin: 8vw auto;
-  max-width: 32em;
+  max-width: 28em;
 }
 @media (min-width: 600px) {
   main.blocks {
@@ -112,8 +112,8 @@ main.blocks a:hover {
 }
 main.blocks h1, main.blocks h2, main.blocks h3 {
   color: #00134D;
-  font-family: "IBM Plex Serif";
-  margin-bottom: 0.4rem;
+  font-family: "Crimson pro";
+  margin-bottom: 0.3rem;
   margin-top: 1.4rem;
   line-height: 1;
 }
@@ -144,8 +144,9 @@ main.blocks ul li p, main.blocks ol li p {
   margin-bottom: 0;
 }
 main.blocks code {
+  font-size: 0.825em;
   background-color: rgba(0, 19, 77, 0.1);
-  font-family: "IBM Plex Mono";
+  font-family: "Recursive";
   padding: 0.02em 0.25em;
   border-radius: 0.25em;
   -webkit-box-decoration-break: clone;
@@ -199,14 +200,154 @@ main.blocks figure img {
 }
 main.blocks figcaption {
   line-height: 1;
-  font-size: 0.7em;
+  font-size: 0.6em;
   color: rgba(0, 19, 77, 0.75);
   text-align: center;
-  font-family: "IBM Plex Sans";
+  font-family: "Open Sans";
 }
 
 footer {
   padding: 2em 0;
+}
+
+/* PrismJS 1.23.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+sass+scss */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+code[class*=language-],
+pre[class*=language-] {
+  color: black;
+  background: none;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection,
+code[class*=language-]::-moz-selection, code[class*=language-] ::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+pre[class*=language-]::selection, pre[class*=language-] ::selection,
+code[class*=language-]::selection, code[class*=language-] ::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+@media print {
+  code[class*=language-],
+pre[class*=language-] {
+    text-shadow: none;
+  }
+}
+/* Code blocks */
+pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*=language-],
+pre[class*=language-] {
+  background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*=language-] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #999;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #9a6e3a;
+  /* This background color was intended by the author of this theme. */
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+
+.token.function,
+.token.class-name {
+  color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
 }
 
 /*# sourceMappingURL=screen.css.map */

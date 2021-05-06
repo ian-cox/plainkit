@@ -5,7 +5,7 @@
 main.blocks{
 
   margin: 8vw auto;
-  max-width: 32em;
+  max-width: 28em;
   @include breakpoint(tablet-up){
     margin: 10vw auto;
   }
@@ -30,7 +30,7 @@ main.blocks{
   h1,h2,h3{
     color: color.$text;
     font-family: type.$headline;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
     margin-top: 1.4rem;
     line-height: 1;
   }
@@ -67,6 +67,7 @@ main.blocks{
   }
 
   code{
+    font-size: .825em;
     background-color: rgba(color.$text,.1);
     font-family: type.$code;
     padding: .02em .25em;
@@ -129,10 +130,10 @@ main.blocks{
 
   figcaption{
     line-height: 1;
-    font-size: .7em;
+    font-size: .6em;
     color: rgba(color.$text,.75);
     text-align: center;
-    font-family: type.$text;
+    font-family: type.$ui;
   }
 
 }

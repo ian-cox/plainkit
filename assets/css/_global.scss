@@ -28,16 +28,16 @@ html {
 	background-color: color.$background;
 	color: rgba(color.$text,.9);
 	@include breakpoint(tablet-up){
-		font-size: 17px;
+		font-size: 1.1em; //17px
 	}
   @include breakpoint(tablet-up){
-    font-size: 18px;
+    font-size: 1.2em; //18px
   }
   @include breakpoint(tablet-landscape-up){
-    font-size: 19px;
+    font-size: 1.3em; //19px
   }
   @include breakpoint(desktop-up){
-    font-size: 22px;
+    font-size: 1.4em; //22px
   }
 }
 
